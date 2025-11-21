@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐渐 - 程序员</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">J</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">关于</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">技能</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="100" fill="url(#grad1)"/>
+                    <circle cx="70" cy="70" r="20" fill="white" opacity="0.3"/>
+                    <path d="M 100 120 Q 80 140 60 140 M 100 120 Q 120 140 140 140" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="80" cy="90" r="8" fill="white"/>
+                    <circle cx="120" cy="90" r="8" fill="white"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">渐渐</h1>
+            <p class="hero-subtitle">程序员 / 开发者 / 创造者</p>
+            <p class="hero-description">
+                热爱编程，专注于构建优雅高效的软件解决方案。<br>
+                让代码成为艺术，让想法变成现实。
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">立即联系</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        大家好，我是渐渐。一名充满热情的程序员，对技术的追求就像我的名字一样——渐渐积累，渐渐进步。
+                    </p>
+                    <p>
+                        我专注于全栈开发，从前端界面到后端服务，致力于创造出用户体验优秀的应用。我相信代码应该是优雅的、可维护的，并且能够解决实际问题。
+                    </p>
+                    <p>
+                        在过去的开发经历中，我接触过多种技术栈，学到了许多最佳实践。现在我正在不断学习新技术，提升自己的能力。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">年开发经验</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">项目完成</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">项目交付</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <pre><code>const jianjian = {
+    name: "渐渐",
+    role: "程序员",
+    passion: "编程",
+    skills: [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Design Patterns"
+    ],
+    philosophy: "写优雅的代码",
+    goal: "改变世界"
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能与专长</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>前端开发</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue, 响应式设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>后端开发</h3>
+                    <p>Node.js, Python, Express, Django, RESTful API</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>数据库</h3>
+                    <p>MySQL, MongoDB, PostgreSQL, Redis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>工具与版本控制</h3>
+                    <p>Git, Docker, CI/CD, Linux, 敏捷开发</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>UI/UX设计</h3>
+                    <p>用户体验设计，原型设计，设计系统</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>软件架构</h3>
+                    <p>系统设计，微服务，设计模式，性能优化</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="contact-description">
+                有任何想法或机会？我很乐意与您交流！
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>邮箱</h3>
+                            <p>jianjian@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>电话</h3>
+                            <p>+86 138-1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>位置</h3>
+                            <p>中国</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="您的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="您的消息" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-icon" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon" title="微博">
+            <i class="fab fa-weibo"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 渐渐. 所有权利保留。</p>
+            <p>用热情和代码打造美好的互联网。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
